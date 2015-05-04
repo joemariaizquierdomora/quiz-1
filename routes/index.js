@@ -11,5 +11,11 @@ router.get('/', function(req, res) {
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
 
+router.get('/author', function(req, res){
+	res.render('author', { Enrique Garcia Rubio y Jose María Izquierdo Mora });
+});
+
+
+
 
 module.exports = router;
